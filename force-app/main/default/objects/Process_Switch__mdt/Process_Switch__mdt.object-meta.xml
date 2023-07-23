@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The Process Switch is a custom Metadata Type used as a check control whether Apex Triggers, Validation Rules, or Flows are allowed to Run. 
+
+Extend as needed for other types of Processes / Automations
+
+When building, always include the master {&quot;All&quot; Switch } and the Switch for the specific Hierarchy. 
+EX: When building the Account Trigger, include {&quot;All Apex Trigger Switches&quot;} &amp;&amp; {&quot;Trigger Switch: Account&quot;}, check that the related Process Switch is either: {Enabled} or {not Disabled}.
+
+Change Process Switches to {&quot;Disabled&quot;} when performing Data Loads to increse performance</description>
+    <label>Process Switch</label>
+    <pluralLabel>Process Switches</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
